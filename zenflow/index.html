@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZenFlow - Accueil</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Bouton pour ouvrir/fermer le menu -->
+  <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+
+  <!-- Sidebar cachée par défaut -->
+  <aside class="sidebar" id="sidebar">
+    <h2>ZenFlow</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="reservation.html">Réservations</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Contenu principal -->
+  <main class="main">
+    <section class="video-container">
+      <video autoplay muted loop id="bg-video">
+        <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4"/>
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+      <div class="overlay">
+        <h1>Bienvenue chez ZenFlow</h1>
+        <p>Un espace de détente, de soins et de bien-être holistique</p>
+      </div>
+    </section>
+
+    <section class="section-reservation">
+      <h2>Réservez votre séance</h2>
+      <p>Découvrez nos offres et planifiez votre moment de bien-être.</p>
+      <a href="reservation.html" class="btn">Réserver maintenant</a>
+    </section>
+
+    <section class="section-other">
+      <h2>Nos services</h2>
+      <p>Massage, yoga, méditation, soins énergétiques…</p>
+    </section>
+  </main>
+
+  <!-- Script de toggle -->
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
